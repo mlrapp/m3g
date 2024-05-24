@@ -1,0 +1,1 @@
+# M3G: Contrasting Multiple Representations with the Multi-Marginal Matching Gap
