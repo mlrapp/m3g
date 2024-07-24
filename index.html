@@ -83,18 +83,18 @@
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
-<!--                  <div class="column has-text-centered">-->
-<!--                    <div class="publication-links">-->
-<!--                         &lt;!&ndash; Arxiv PDF link &ndash;&gt;-->
-<!--                      <span class="link-block">-->
-<!--                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"-->
-<!--                        class="external-link button is-normal is-rounded is-dark">-->
-<!--                        <span class="icon">-->
-<!--                          <i class="fas fa-file-pdf"></i>-->
-<!--                        </span>-->
-<!--                        <span>Paper</span>-->
-<!--                      </a>-->
-<!--                    </span>-->
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- PMLR PDF link -->
+                      <span class="link-block">
+                        <a href="https://proceedings.mlr.press/v235/piran24a.html" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
 
                     <!-- Supplementary PDF link -->
 <!--                    <span class="link-block">-->
@@ -351,12 +351,29 @@
 
 
 <!--BibTex citation -->
-<!--  <section class="section" id="BibTeX">-->
-<!--    <div class="container is-max-desktop content">-->
-<!--      <h2 class="title">BibTeX</h2>-->
-<!--      <pre><code>BibTex Code Here</code></pre>-->
-<!--    </div>-->
-<!--</section>-->
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+
+@InProceedings{piran24m3g,
+  title = 	 {Contrasting Multiple Representations with the Multi-Marginal Matching Gap},
+  author =       {Piran, Zoe and Klein, Michal and Thornton, James and Cuturi, Marco},
+  booktitle = 	 {Proceedings of the 41st International Conference on Machine Learning},
+  pages = 	 {40827--40842},
+  year = 	 {2024},
+  editor = 	 {Salakhutdinov, Ruslan and Kolter, Zico and Heller, Katherine and Weller, Adrian and Oliver, Nuria and Scarlett, Jonathan and Berkenkamp, Felix},
+  volume = 	 {235},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {21--27 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v235/main/assets/piran24a/piran24a.pdf},
+  url = 	 {https://proceedings.mlr.press/v235/piran24a.html},
+  abstract = 	 {Learning meaningful representations of complex objects that can be seen through multiple ($k\geq 3$) views or modalities is a core task in machine learning. Existing methods use losses originally intended for paired views, and extend them to $k$ views, either by instantiating $\tfrac12k(k-1)$ loss-pairs, or by using reduced embeddings, following a <em>one vs. average-of-rest</em> strategy. We propose the multi-marginal matching gap (M3G), a loss that borrows tools from multi-marginal optimal transport (MM-OT) theory to simultaneously incorporate all $k$ views. Given a batch of $n$ points, each seen as a $k$-tuple of views subsequently transformed into $k$ embeddings, our loss contrasts the cost of matching these $n$ ground-truth $k$-tuples with the MM-OT polymatching cost, which seeks $n$ optimally arranged $k$-tuples chosen within these $n\times k$ vectors. While the exponential complexity $O(n^k$) of the MM-OT problem may seem daunting, we show in experiments that a suitable generalization of the Sinkhorn algorithm for that problem can scale to, e.g., $k=3\sim 6$ views using mini-batches of size $64&nbsp;\sim128$. Our experiments demonstrate improved performance over multiview extensions of pairwise losses, for both self-supervised and multimodal tasks.}
+}
+      </code></pre>
+    </div>
+</section>
 <!--End BibTex citation -->
 
 
